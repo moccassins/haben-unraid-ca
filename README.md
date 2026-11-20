@@ -28,24 +28,3 @@ weg und biegt beide Container in zwei Schritten um:
    bleibt vollstaendig erhalten.
 
 Ohne eigenen Server: unveraendert installieren, nichts weiter zu tun.
-
-## Einreichung bei Community Apps
-Dieses Repository ist einreichfertig: Die TemplateURL-Einträge in `templates/*.xml` zeigen auf
-`moccassins/haben-unraid-ca`. Schritt: Auf https://ca.unraid.net/submit das Repository eintragen,
-**Validate** und **Scan** ausführen, einreichen.
-
-Für ein eigenes Fork-Repo: Platzhalter ersetzen mit
-`sed -i 's|moccassins/haben-unraid-ca|DEINNAME/DEINREPO|g' templates/*.xml`
-
-## Nur lokal benutzen (ohne Einreichung)
-Im Unraid-Terminal:
-```sh
-docker network create haben
-mkdir -p /mnt/user/appdata/haben/belege /mnt/user/appdata/haben/eric /mnt/user/appdata/haben/eric-log
-chown -R 1000:1000 /mnt/user/appdata/haben/belege /mnt/user/appdata/haben/eric /mnt/user/appdata/haben/eric-log
-for t in haben-db haben haben-backup; do
-  wget -qO /boot/config/plugins/dockerMan/templates-user/my-$t.xml \
-    https://raw.githubusercontent.com/USERNAME/haben-unraid-ca/main/templates/$t.xml
-done
-```
-Danach unter Docker › Add Container die Vorlagen in der Reihenfolge haben-db → haben → haben-backup anlegen.
