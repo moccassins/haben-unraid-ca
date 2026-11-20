@@ -12,10 +12,12 @@ nur `TemplateURL` zeigt auf dieses Repository.
 Alle laufen im Docker-Netzwerk `haben`; Anleitung: https://haben.app/unraid.html
 
 ## Einreichung bei Community Apps
-1. Diesen Ordner als neues, öffentliches GitHub-Repository pushen.
-2. In den drei templates/*.xml den Platzhalter `USERNAME/haben-unraid-ca` durch deinen echten `NAME/REPO` ersetzen:
-   `sed -i 's|USERNAME/haben-unraid-ca|DEINNAME/DEINREPO|g' templates/*.xml`
-3. Auf https://ca.unraid.net/submit das Repository eintragen, **Validate** und **Scan** ausführen, einreichen.
+Dieses Repository ist einreichfertig: Die TemplateURL-Einträge in `templates/*.xml` zeigen auf
+`moccassins/haben-unraid-ca`. Schritt: Auf https://ca.unraid.net/submit das Repository eintragen,
+**Validate** und **Scan** ausführen, einreichen.
+
+Für ein eigenes Fork-Repo: Platzhalter ersetzen mit
+`sed -i 's|moccassins/haben-unraid-ca|DEINNAME/DEINREPO|g' templates/*.xml`
 
 ## Nur lokal benutzen (ohne Einreichung)
 Im Unraid-Terminal:
