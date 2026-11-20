@@ -1,0 +1,7 @@
+<CommunityApplications>
+  <Profile>
+    Haben: selbst gehostete Buchhaltung für Freiberufler, Selbstständige und kleine Firmen (UG/GmbH). Rechnungen mit E-Rechnung (ZUGFeRD, XRechnung), Belege mit KI-Auslesung, Bankabgleich (Enable Banking, FinTS), EÜR oder Bilanz, Umsatzsteuer-Voranmeldung und Jahreserklärungen direkt an ELSTER. Für die GoBD gebaut, mit DATEV-Export und täglichem verschlüsselten Backup (restic). Open-Source-Alternative zu Lexware Office und sevDesk, betrieben mit Docker auf dem eigenen Server.
+  </Profile>
+  <Icon>https://raw.githubusercontent.com/Speicherstadt/haben/main/apps/web/public/icon-512.png</Icon>
+  <WebPage>https://haben.app</WebPage>
+</CommunityApplications>
