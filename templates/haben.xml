@@ -11,6 +11,7 @@
   <Project>https://haben.app/</Project>
   <Overview>Haben: selbst gehostete Buchhaltung für Freelancer und kleine Firmen. Rechnungen mit ZUGFeRD und XRechnung, Belege, Bankabgleich, EÜR und Umsatzsteuer-Voranmeldung an ELSTER. Braucht haben-db, ein tägliches Backup macht haben-backup. HTTPS ist Pflicht (Reverse Proxy), ELSTER nur auf x86_64.[br][br]Haben: self-hosted bookkeeping for German freelancers and small companies (e-invoices, receipts, bank reconciliation, VAT returns to ELSTER). Needs haben-db; haben-backup runs daily backups. HTTPS via a reverse proxy is required.</Overview>
   <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/moccassins/haben-unraid-ca/main/templates/haben.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Speicherstadt/haben/main/apps/web/public/icon-512.png</Icon>
   <ExtraParams>--restart unless-stopped --read-only --tmpfs /tmp --cap-drop ALL --security-opt no-new-privileges:true</ExtraParams>
